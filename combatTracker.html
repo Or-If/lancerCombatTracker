@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Orianna Schultz, started 12/09/2023-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combat track</title>
+  <link rel="stylesheet" href="combatTracker.css">
+</head>
+<body>
+  <form>
+    <label for="mechSelection01">Enemy Mech Selection</label>
+    <select id="mechSelection01">
+      <option value="Assault">Assault</option>
+      <option value="Assasin">Assasin</option>
+      <option value="Sniper">Sniper</option>
+    </select>
+    <input type="submit" onclick="inputMech('01')">
+  </form>
+  <div>
+    <p id="mechDataDisplay01"></p>
+  </div>
+
+</body>
+</html>
