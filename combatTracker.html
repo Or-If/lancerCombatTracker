@@ -6,19 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combat track</title>
   <link rel="stylesheet" href="combatTracker.css">
+  <script src="combatTracker.jS"></script>
 </head>
 <body>
-  <form>
     <label for="mechSelection01">Enemy Mech Selection</label>
-    <select id="mechSelection01">
+    <select name="selection01" id="mechSelection01">
       <option value="Assault">Assault</option>
       <option value="Assasin">Assasin</option>
       <option value="Sniper">Sniper</option>
     </select>
-    <input type="submit" onclick="inputMech('01')">
-  </form>
+    <input type="button" onclick="setCorrectDisplay('01')">Submit
   <div>
-    <p id="mechDataDisplay01"></p>
+    <p id="mechDataDisplay01"> hi</p>
+    <!-- information will be established here, based on what mech you have slected-->
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
 </body>
