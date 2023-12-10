@@ -2,53 +2,65 @@
 
 .coreStatsBox {
   display: grid;
-  grid-template-columns: 40px 40px 40px;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 50px, 50px, 50px, 50px;
+  height: 200px;
+  width: 30vw;
   grid-template-areas: 
   "coreStats . ."
-  "hp armor eDefense",
-  "evasion speed size",
+  "hp armor eDefense"
+  "evasion speed size"
   "heatCap saveTarget sensors";
-  height: 300px;
-  width: 300px;
+}
+
+p {
+  width: 60px;
+  height: 20px;
   
+}
+
+h3 {
+  width: 60px;
+  height: 20px;
 }
 
 .mechCoreStats {
   grid-area: coreStats;
 }
 
-.hp {
+.mechHp {
   grid-area: hp;
 }
 
-.armor {
+.mechArmor {
   grid-area: armor;
 }
 
-.eDefense {
+.mechEDefense {
   grid-area: eDefense;
 }
 
-.evasion {
+.mechEvasion {
   grid-area: evasion;
 }
 
-.speed {
+.mechSpeed {
   grid-area: speed;
 }
 
-.size {
+.mechSize {
   grid-area: size;
 }
 
-.heatCap {
+.mechHeatCap {
   grid-area: heatCap;
 }
 
-.saveTarget {
+.mechSaveTarget {
   grid-area: saveTarget;
 }
 
-.sensors {
+.mechSensors {
   grid-area: sensors;
 }
+

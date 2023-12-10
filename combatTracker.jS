@@ -35,24 +35,34 @@ function convertMechObjectToPage (mechType, mechDisplayPosition) {
   document.getElementById(mechDisplayPosition).querySelector(".mechTypeInfo").innerHTML = mechType.type;
   document.getElementById(mechDisplayPosition).querySelector(".mechSkills").innerHTML = "Mech Skills";
   document.getElementById(mechDisplayPosition).querySelector(".mechCoreStats").innerHTML = "Core Stats";
-  document.getElementById(mechDisplayPosition).querySelector(".mechHp").innerHTML = "Hp:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechHpInfo").innerHTML = mechType.hp;
-  document.getElementById(mechDisplayPosition).querySelector(".mechArmor").innerHTML = "Armor:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechArmorInfo").innerHTML = mechType.armor;
-  document.getElementById(mechDisplayPosition).querySelector(".mechEvasion").innerHTML = "Evasion:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechEvasionInfo").innerHTML = mechType.evasion;
-  document.getElementById(mechDisplayPosition).querySelector(".mechEDefense").innerHTML = "E-Defense:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechEDefenseInfo").innerHTML = mechType.edefense;
-  document.getElementById(mechDisplayPosition).querySelector(".mechSpeed").innerHTML = "Speed:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechSpeedInfo").innerHTML = mechType.speed;
-  document.getElementById(mechDisplayPosition).querySelector(".mechSize").innerHTML = "Size:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechSizeInfo").innerHTML = mechType.size;
-  document.getElementById(mechDisplayPosition).querySelector(".mechHeatCap").innerHTML = "Heat Cap:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechHeatCapInfo").innerHTML = mechType.heatCap;
-  document.getElementById(mechDisplayPosition).querySelector(".mechSaveTarget").innerHTML = "Save Target:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechSaveTargetInfo").innerHTML = mechType.saveTarget;
-  document.getElementById(mechDisplayPosition).querySelector(".mechSensors").innerHTML = "Sensors:";
-  document.getElementById(mechDisplayPosition).querySelector(".mechSensorsInfo").innerHTML = mechType.sensors;
+
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechHp").innerHTML = "Hp: "+ mechType.hp;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechHpInfo").innerHTML = mechType.hp;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechArmor").innerHTML = "Armor: " + mechType.armor;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechArmorInfo").innerHTML = mechType.armor;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechEvasion").innerHTML = "Evasion: " + mechType.evasion;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechEvasionInfo").innerHTML = mechType.evasion;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechEDefense").innerHTML = "E-Defense: " + mechType.edefense;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechEDefenseInfo").innerHTML = mechType.edefense;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechSpeed").innerHTML = "Speed: " + mechType.speed;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechSpeedInfo").innerHTML = mechType.speed;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechSize").innerHTML = "Size: " + mechType.size;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechSizeInfo").innerHTML = mechType.size;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechHeatCap").innerHTML = "Heat Cap: " + mechType.heatCap;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechHeatCapInfo").innerHTML = mechType.heatCap;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechSaveTarget").innerHTML = "Save Target: " + mechType.saveTarget;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechSaveTargetInfo").innerHTML = mechType.saveTarget;
+
+  document.getElementById(mechDisplayPosition).querySelector(".mechSensors").innerHTML = "Sensors: " + mechType.sensors;
+  //document.getElementById(mechDisplayPosition).querySelector(".mechSensorsInfo").innerHTML = mechType.sensors;
 }
 
 //a basic object constructor that every mech is build off of
