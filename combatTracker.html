@@ -10,14 +10,28 @@
 </head>
 <body>
     <label for="mechSelection01">Enemy Mech Selection</label>
-    <select name="selection01" id="mechSelection01">
-      <option value="Assault">Assault</option>
-      <option value="Assasin">Assasin</option>
-      <option value="Sniper">Sniper</option>
+    <select name="selection01" id="mechSelection01" onchange="setCorrectDisplay('01')">
+      <option value="blank"></option>
+      <option value="assault">Assault</option>
+      <option value="assasin">Assasin</option>
+      <option value="sniper">Sniper</option>
     </select>
-    <input type="button" onclick="setCorrectDisplay('01')">Submit
-  <div>
-    <p id="mechDataDisplay01"> hi</p>
+  <div id="mechDataDisplay01">
+    <p class="mechName"></p>
+    <dl>
+      <dt class="mechType"></dt>
+      <dd class="mechTypeInfo"></dd>
+    </dl>
+    <dl>
+      <dt class="mechHp"></dt>
+      <dd class="mechHpInfo"></dd>
+    </dl>
+    <dl>
+      <dt class="mechEvasion"></dt>
+      <dd class="mechEvasionInfo"></dd>
+    </dl>
+
+  
     <!-- information will be established here, based on what mech you have slected-->
 
 
