@@ -1,0 +1,54 @@
+
+
+.coreStatsBox {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-areas: 
+  "coreStats . ."
+  "hp armor eDefense",
+  "evasion speed size",
+  "heatCap saveTarget sensors";
+  height: 300px;
+  width: 300px;
+  
+}
+
+.mechCoreStats {
+  grid-area: coreStats;
+}
+
+.hp {
+  grid-area: hp;
+}
+
+.armor {
+  grid-area: armor;
+}
+
+.eDefense {
+  grid-area: eDefense;
+}
+
+.evasion {
+  grid-area: evasion;
+}
+
+.speed {
+  grid-area: speed;
+}
+
+.size {
+  grid-area: size;
+}
+
+.heatCap {
+  grid-area: heatCap;
+}
+
+.saveTarget {
+  grid-area: saveTarget;
+}
+
+.sensors {
+  grid-area: sensors;
+}
