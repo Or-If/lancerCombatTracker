@@ -1,27 +1,58 @@
 
+p {
+  width: 80px;
+  height: 20px;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.mechSkillsBox {
+  display: grid;
+  height: 100px;
+  width: 200px;
+  border: 3px black groove;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "skills skills"
+  "hull systems"
+  "agility engineering";
+} 
+
+.mechSkills {
+  grid-area: skills;
+}
+
+.mechHull {
+  grid-area: hull;
+}
+
+.mechSystems {
+  grid-area: systems;
+}
+
+.mechAgility {
+  grid-area: agility;
+}
+
+.mechEngineering {
+  grid-area: engineering;
+}
 
 .coreStatsBox {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 50px, 50px, 50px, 50px;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto;
   height: 200px;
-  width: 30vw;
+  width: 200px;
+  border: 3px black groove;
   grid-template-areas: 
-  "coreStats . ."
-  "hp armor eDefense"
-  "evasion speed size"
-  "heatCap saveTarget sensors";
-}
-
-p {
-  width: 60px;
-  height: 20px;
-  
-}
-
-h3 {
-  width: 60px;
-  height: 20px;
+  "coreStats ."
+  "hp armor"
+  "evasion eDefense"
+  "speed size"
+  "heatCap saveTarget" 
+  "sensors .";
 }
 
 .mechCoreStats {
@@ -64,3 +95,43 @@ h3 {
   grid-area: sensors;
 }
 
+.mechWeapon01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "name name name"
+  "position keyword accuracy"
+  "range damage ."
+  "effect effect effect";
+  width: 100px;
+}
+
+.mechWeaponName {
+  grid-area: name;
+  width: 80px;
+}
+
+.mechWeaponPosition {
+  grid-area: position;
+}
+
+.mechWeaponKeyword {
+  grid-area: keyword;
+}
+
+.mechWeaponAccuracy {
+  grid-area: accuracy;
+}
+
+.mechWeaponRange {
+  grid-area: range;
+}
+
+.mechWeaponDamage {
+  grid-area: damage;
+}
+
+.mechWeaponEffect {
+  grid-area: effect;
+}
