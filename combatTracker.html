@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Or-if , started 12/09/2023-->
+  <!-- Orianna Schultz, Or-if , started 12/09/2023-->
   <meta charset="UTF-8">
   <meta name="viewport">
   <title>Combat track</title>
@@ -17,10 +17,8 @@
       <option value="sniper">Sniper</option>
     </select>
   <div id="mechDataDisplay01">
-    <p class="mechName"></p>
-    <!--
-      <p class="mechType"></p>
-    -->
+    <b><p class="mechName" ></p></b>
+
     <div class="mechSkillsBox">
       <b><p class="mechSkills" style="width: 80px;"></p></b>
       <p class="mechHull"></p>
@@ -29,9 +27,12 @@
       <p class="mechEngineering"></p>
     </div>
 
-    <div class="coreStatsBox">
+    <div class="coreStatsBox" onclick="reduceHitpoints('01')">
       <b><p class="mechCoreStats" style="width: 80px;"></p></b>
-      <p class="mechHp"></p>
+      <div class="mechHealthcounter">
+        <label class="mechHp" for="mechRemainingHealth"></label>
+        <input class="mechRemainingHealth" type="number">
+      </div>
       <p class="mechArmor"></p>
       <p class="mechEvasion"></p>
       <p class="mechEDefense"></p>
@@ -44,7 +45,7 @@
 
     <div class="baseGearBox">
       <b><p class="mechBaseGear" style="width: 80px;"></p></b>
-      <div class="mechWeapon01" class="">
+      <div class="mechWeapon01" class="mechWeaponBox">
         <p class="mechWeaponName"></p>
         <p class="mechWeaponPosition"></p>
         <p class="mechWeaponKeywords"></p>
@@ -53,7 +54,15 @@
         <p class="mechWeaponDamage"></p>
         <p class="mechWeaponEffect"></p>
       </div>
-      <p class="mechWeapon02"></p>
+      <div class="mechWeapon02" class="mechWeaponBox">
+        <p class="mechWeaponName"></p>
+        <p class="mechWeaponPosition"></p>
+        <p class="mechWeaponKeywords"></p>
+        <p class="mechWeaponAccuracy"></p>
+        <p class="mechWeaponRange"></p>
+        <p class="mechWeaponDamage"></p>
+        <p class="mechWeaponEffect"></p>
+      </div>
       <p class="mechWeapon03"></p>
     </div>
     <!-- information will be established here, based on what mech you have slected-->

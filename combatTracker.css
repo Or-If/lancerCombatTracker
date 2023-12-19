@@ -6,6 +6,20 @@ p {
   margin: 0px;
 }
 
+input {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  margin: 0px;
+  border: none;
+}
+
+.mechName {
+  font-size: 26px;
+  margin: 8px;
+
+}
+
 .mechSkillsBox {
   display: grid;
   height: 100px;
@@ -59,8 +73,13 @@ p {
   grid-area: coreStats;
 }
 
-.mechHp {
+.mechHealthcounter {
   grid-area: hp;
+}
+
+.mechHp {
+  width: 20px;
+
 }
 
 .mechArmor {
@@ -134,4 +153,55 @@ p {
 
 .mechWeaponEffect {
   grid-area: effect;
+}
+
+.mechWeapon02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "name name name"
+  "position keyword accuracy"
+  "range damage ."
+  "effect effect effect";
+  width: 100px;
+}
+
+.mechWeaponName02 {
+  grid-area: name;
+  width: 80px;
+}
+
+.mechWeaponPosition02 {
+  grid-area: position;
+}
+
+.mechWeaponKeyword02 {
+  grid-area: keyword;
+}
+
+.mechWeaponAccuracy02 {
+  grid-area: accuracy;
+}
+
+.mechWeaponRange02 {
+  grid-area: range;
+}
+
+.mechWeaponDamage02 {
+  grid-area: damage;
+}
+
+.mechWeaponEffect02 {
+  grid-area: effect;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
